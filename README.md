@@ -1,6 +1,5 @@
 mvn dependency:tree -Dverbose
-mvn package
-mvn exec:java -Dexec.mainClass="org.zeta.experiments.select.Main" -q
+MAVEN_OPTS="-Xmx5Gb" mvn package exec:java -Dexec.mainClass="org.zeta.experiments.select.Main"
 
 https://code.google.com/p/sbvj/
 Papers:
